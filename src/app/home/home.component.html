@@ -1,0 +1,24 @@
+<div>
+    <button class="btn btn-success" *ngIf="getRole() === 'admin'" routerLink="/addUser"> Add User</button>
+
+</div>
+<table class="table">
+    <caption>Users List</caption>
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone no</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+
+    <tr *ngFor="let user of userList">
+        <td>{{user.id}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.address}}</td>
+    </tr>
+
+
+</table>
