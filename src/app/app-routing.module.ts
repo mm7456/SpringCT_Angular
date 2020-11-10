@@ -6,10 +6,10 @@ import { LoginComponent } from './login/login.component';
 
 
 const appRoutes:Routes=[
+  {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
-  {path:'addUser',component:AddUserComponent},
-  {path:'',redirectTo:'login',pathMatch:'full'}
+  {path:'addUser',component:AddUserComponent}
 ];
 
 @NgModule({

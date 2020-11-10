@@ -2,7 +2,9 @@ label{
     width: 100px;
 }
 
-
+span{
+    color: red;
+}
 
 form{
     margin-left:35%;
